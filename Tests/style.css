@@ -5,10 +5,90 @@
     --bg-oxford-blue: hsla(222, 44%, 13%, 1);
     --bg-oxford-blue-2: hsla(222, 47%, 11%, 1);
 }
+
+*{
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--bg-oxford-blue);
+    color: white;
 }
-h1{
-    text-align: center;
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.title{
     color: cyan;
+    font-size: 1.4rem;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.items > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px;
+    transition: .2s;
+}
+
+.items > a:hover{
+    color: cyan;
+}
+
+
+
+/* intro  */
+
+.intro{
+    display: flex;
+    height: calc(100vh - 80px);
+    align-items: center;
+}
+
+.top-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-left h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.color{
+    color: #38cc77;
+}
+
+.top-left p{
+    font-size: 20px;
+}
+
+.top-right{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right img{
+    max-height: 100%;
+    max-width: 100%;
 }
