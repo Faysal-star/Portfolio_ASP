@@ -15,6 +15,8 @@
 body{
     background-color: var(--bg-oxford-blue);
     color: white;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .nav{
@@ -63,7 +65,6 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
