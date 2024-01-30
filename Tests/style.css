@@ -17,6 +17,7 @@ body{
     color: white;
     max-width: 1400px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .nav{
@@ -67,6 +68,19 @@ body{
     justify-content: center;
     flex-direction: column;
     padding-left: 2vw;
+    animation-name: leftAnim ;
+    animation-duration: 1s;
+}
+
+@keyframes leftAnim {
+    from{
+        transform: translateX(-30vw);
+        opacity: 10%;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 100%;
+    }
 }
 
 .top-left h1{
@@ -88,6 +102,19 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-name: rAnim ;
+    animation-duration: 1s;
+}
+
+@keyframes rAnim {
+    from{
+        transform: translateX(30vw);
+        opacity: 10%;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 100%;
+    }
 }
 
 .top-right img{
