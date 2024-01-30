@@ -120,6 +120,15 @@ body{
 .top-right img{
     max-height: 100%;
     max-width: 100%;
+    transition: filter 0.3s ease-in-out;
+}
+
+#proP:hover{
+    filter: drop-shadow(0 0 13px hsla(199, 89%, 49%, 1));
+}
+
+.glowing {
+    filter: drop-shadow(0 0 13px hsla(199, 89%, 49%, 1));
 }
 
 @media (max-width : 900px) {
